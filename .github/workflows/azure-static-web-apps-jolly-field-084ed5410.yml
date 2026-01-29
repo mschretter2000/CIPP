@@ -30,7 +30,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           with:
               app_location: "/"
-              api_location: "/api"
+              api_location: "/src/api"
               output_location: "out"
               app_build_command: "npm run export"
 
@@ -47,6 +47,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_FIELD_084ED5410 }}
           action: "close"
+
 
 
 
